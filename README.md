@@ -9,3 +9,7 @@ When we run one thread with the `park` function, it tries to find the first avai
 When one thread runs the `unpark` function, its finds a parked position, and unparks it (sets the value in the buffer to 1).
 
 To make it simpler, there is no sense of "car ownership", so if one thread finds one parked car, its marks the position free.
+
+Compile with `gcc main.c -o main.o`.
+
+Run with `./main.o`.
